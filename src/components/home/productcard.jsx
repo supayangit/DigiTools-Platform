@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaCheck } from "react-icons/fa6";
+
 import {
     LuFileText,
     LuSparkles,
@@ -38,12 +40,22 @@ const productcard = ({ product, selectBuyItem, setSelectBuyItem, cartCount, setC
         "new": "bg-green-100 text-green-600"
     };
 
+    const [added, setAdded] = useState(false);
+
     const handleBuyNow = () => {
         setSelectBuyItem([...selectBuyItem, product]);
         console.log("buy button clicked");
+
         let newCartCount = cartCount + 1;
         setCartCount(newCartCount);
-        console.log("cartCount", newCartCount)
+        console.log("cartCount", newCartCount);
+
+        setAdded(true);
+
+        // return to normal after 2 seconds
+        setTimeout(() => {
+            setAdded(false);
+        }, 2000);
     };
 
     const Icon = iconMap[icon] || LuBox;
@@ -55,12 +67,12 @@ const productcard = ({ product, selectBuyItem, setSelectBuyItem, cartCount, setC
                 <div className="w-full flex justify-end">
                     <div>
                         {
-                        tagType && (
-                            <span className={`badge badge-sm ${tagStyles[tagType]}`}>
-                                {tag}
-                            </span>
-                        )
-                    }
+                            tagType && (
+                                <span className={`badge badge-sm ${tagStyles[tagType]}`}>
+                                    {tag}
+                                </span>
+                            )
+                        }
                     </div>
                 </div>
 
@@ -87,8 +99,12 @@ const productcard = ({ product, selectBuyItem, setSelectBuyItem, cartCount, setC
                 </ul>
 
                 <div className="mt-4">
-                    <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block" onClick={handleBuyNow}>
-                        Buy Now
+                    <button
+                        onClick={handleBuyNow}
+                        className={`btn btn-block text-white ${added ? "bg-green-500" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA]"
+                            }`}
+                    >
+                        {added ? <FaCheck /> : null} {added ? "Added to Cart" : "Buy Now"}
                     </button>
                 </div>
             </div>
