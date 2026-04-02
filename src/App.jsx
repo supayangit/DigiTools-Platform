@@ -41,7 +41,7 @@ function App() {
       <header>
         <Navbar cartCount={cartCount} setCartCount={setCartCount} />
       </header>
-      <img src="./assets/user.png" alt="" />
+
       <section>
         <Banner />
       </section>

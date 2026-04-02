@@ -5,12 +5,12 @@ import { LuRocket } from "react-icons/lu";
 
 const container = () => {
     return (
-        <div className="grid grid-cols-3 gap-10 text-center px-50">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 text-center px-50">
 
             {/* Step 1 */}
             <div className="flex flex-col gap-6 items-center shadow-sm p-4">
 
-                <div className="w-4/5 flex flex-col gap-4 items-center">
+                <div className="w-full lg:w-4/5 flex flex-col gap-4 items-center">
                     <div className="w-full flex items-center justify-end gap-2">
                         <div className="w-8 h-8 rounded-full bg-purple-500 text-white text-xs flex items-center justify-center">
                             01
@@ -35,7 +35,7 @@ const container = () => {
             {/* Step 2 */}
             <div className="flex flex-col gap-6 items-center shadow-sm p-4">
 
-                <div className="w-4/5 flex flex-col gap-4 items-center">
+                <div className="w-full lg:w-4/5 flex flex-col gap-4 items-center">
                     <div className="w-full flex items-center justify-end gap-2">
                         <div className="w-8 h-8 rounded-full bg-purple-500 text-white text-xs flex items-center justify-center">
                             02
@@ -60,7 +60,7 @@ const container = () => {
             {/* Step 3 */}
             <div className="flex flex-col gap-6 items-center shadow-sm p-4">
 
-                <div className="w-4/5 flex flex-col gap-4 items-center">
+                <div className="w-full lg:w-4/5 flex flex-col gap-4 items-center">
                     <div className="w-full flex items-center justify-end gap-2">
                         <div className="w-8 h-8 rounded-full bg-purple-500 text-white text-xs flex items-center justify-center">
                             03

@@ -11,7 +11,7 @@ const PricingCard = ({ pricing, isFeatured }) => {
 
         <div
             className={`card shadow-sm ${isFeatured
-                    ? "bg-purple-600 text-white"
+                    ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"
                     : "bg-base-100"
                 }`}
         >
@@ -44,7 +44,7 @@ const PricingCard = ({ pricing, isFeatured }) => {
                 <div className="mt-4">
                     <button
                         onClick={handleBuyItem}
-                        className={`btn btn-block ${isFeatured ? "bg-white text-purple-600 border-none" : "btn-primary"
+                        className={`btn btn-block ${isFeatured ? "bg-white text-purple-600 border-none" : "btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"
                             }`}
                     >
                         Get Started
