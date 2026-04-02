@@ -8,10 +8,10 @@ const banner = () => {
             <div className="hero bg-base-200 min-h-screen pt-5 md:pt-20">
                 <div className="hero-content flex-col lg:flex-row-reverse gap-8 lg:gap-15 px-4 lg:px-0">
 
-                    <img
-                        src="/src/assets/banner.png"
-                        className="w-full max-w-xs sm:max-w-sm lg:max-w-md rounded-lg shadow-2xl"
-                    />
+                    
+                    <div>
+                        <img src="/banner.png" className="w-full max-w-xs sm:max-w-sm lg:max-w-md rounded-lg shadow-2xl" />
+                    </div>
 
                     <div className="text-center lg:text-left">
 

@@ -41,6 +41,7 @@ const productcard = ({ product, selectBuyItem, setSelectBuyItem, cartCount, setC
         "new": "bg-green-100 text-green-600"
     };
 
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [added, setAdded] = useState(false);
 
     const handleBuyNow = () => {

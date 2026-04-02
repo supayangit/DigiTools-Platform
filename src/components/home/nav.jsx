@@ -1,6 +1,6 @@
 import React from 'react';
 
-const nav = ({ cartCount, setCartCount, selectedType, setSelectedType }) => {
+const nav = ({ cartCount, selectedType, setSelectedType }) => {
     return (
         <div>
             <nav className='flex gap-4 w-fit mx-auto'>

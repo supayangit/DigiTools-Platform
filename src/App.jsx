@@ -8,7 +8,7 @@ import Steps from './components/steps/steps'
 import Ready from './components/ready/ready'
 import Pricing from './components/pricing/pricing'
 import Footer from './components/footer'
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
 

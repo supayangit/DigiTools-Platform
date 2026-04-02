@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
 import Selectedcard from './selectedcard';
 import { toast, Bounce } from 'react-toastify';
 
 
-const CartItems = ({ products, selectBuyItem, setSelectBuyItem, cartCount, setCartCount }) => {
+
+const CartItems = ({ selectBuyItem, setSelectBuyItem, setCartCount }) => {
 
     const handleDeleteSelectedProduct = (product) => {
         const updatedProducts = selectBuyItem.filter(

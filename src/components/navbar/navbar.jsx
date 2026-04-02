@@ -1,6 +1,6 @@
 import React from 'react';
 
-const navbar = ({ cartCount, setCartCount }) => {
+const navbar = ({ cartCount }) => {
     return (
         <div>
             <div>
