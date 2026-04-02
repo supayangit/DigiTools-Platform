@@ -1,4 +1,4 @@
-import { useEffect as useProducts, useState, useEffect as usePricings } from "react";
+import { useEffect as useProducts, useState, useEffect as usePricings, Suspense } from "react";
 import './App.css'
 import Navbar from './components/navbar/navbar'
 import Banner from './components/banner/banner'
@@ -13,7 +13,7 @@ function App() {
 
   const [products, setProducts] = useState([]);
   const [pricings, setPricings] = useState([]);
-  const [cartCount, setCartCount] = useState(0);  
+  const [cartCount, setCartCount] = useState(0);
 
   useProducts(() => {
     const fetchProducts = async () => {
@@ -38,9 +38,9 @@ function App() {
   return (
     <>
       <header>
-        <Navbar cartCount={cartCount} setCartCount={setCartCount}/>
+        <Navbar cartCount={cartCount} setCartCount={setCartCount} />
       </header>
-<img src="./assets/user.png" alt="" />
+      <img src="./assets/user.png" alt="" />
       <section>
         <Banner />
       </section>
@@ -49,9 +49,9 @@ function App() {
         <Stats />
       </section>
 
-      <section>
+      <Suspense fallback={<span className="loading loading-spinner loading-lg"></span>}>
         <Home products={products} cartCount={cartCount} setCartCount={setCartCount} />
-      </section>
+      </Suspense>
 
       <section>
         <Steps></Steps>
