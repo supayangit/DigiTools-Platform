@@ -8,6 +8,7 @@ import Steps from './components/steps/steps'
 import Ready from './components/ready/ready'
 import Pricing from './components/pricing/pricing'
 import Footer from './components/footer'
+import { ToastContainer, toast } from 'react-toastify';
 
 function App() {
 
@@ -68,6 +69,9 @@ function App() {
       <section>
         <Footer></Footer>
       </section>
+
+      {/* toast pop up container */}
+      <ToastContainer></ToastContainer>
     </>
   );
 }

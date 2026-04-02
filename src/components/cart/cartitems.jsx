@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Selectedcard from './selectedcard';
+import { toast, Bounce } from 'react-toastify';
+
 
 const CartItems = ({ products, selectBuyItem, setSelectBuyItem, cartCount, setCartCount }) => {
 
@@ -9,10 +11,18 @@ const CartItems = ({ products, selectBuyItem, setSelectBuyItem, cartCount, setCa
         );
         setSelectBuyItem(updatedProducts);
         setCartCount((prev) => prev - 1);
+
+        toast.error(`"${product.name}" removed from cart`);
+
     };
 
     const handleCheckout = () => {
-       
+        if (selectBuyItem.length === 0) {
+            toast.warning("No products in cart to checkout");
+            return;
+        }
+        toast.success("Checkout successful!");
+        
         setSelectBuyItem([]);
    
         setCartCount(0);

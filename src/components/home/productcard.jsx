@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaCheck } from "react-icons/fa6";
+import { toast, Bounce } from 'react-toastify';
 
 import {
     LuFileText,
@@ -50,8 +51,9 @@ const productcard = ({ product, selectBuyItem, setSelectBuyItem, cartCount, setC
         setCartCount(newCartCount);
         console.log("cartCount", newCartCount);
 
-        setAdded(true);
+        toast.success(`"${product.name}" added to cart`);
 
+        setAdded(true);
         // return to normal after 2 seconds
         setTimeout(() => {
             setAdded(false);
