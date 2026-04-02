@@ -64,7 +64,7 @@ const productcard = ({ product, selectBuyItem, setSelectBuyItem, cartCount, setC
                     </div>
                 </div>
 
-                <div className={`w-16 h-16 rounded-full flex items-center justify-center ${iconStyles[tagType]}`}>
+                <div className={`w-15 h-15 rounded-full flex items-center justify-center ${iconStyles[tagType]}`}>
                     <Icon className="text-3xl" />
                 </div>
 
