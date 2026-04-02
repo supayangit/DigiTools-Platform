@@ -1,4 +1,7 @@
 import React from 'react';
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const footer = () => {
     return (
@@ -54,25 +57,23 @@ const footer = () => {
 
                         <div className="flex gap-4">
                             <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black">
-                                i
+                                <FaInstagram />
                             </a>
 
                             <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black">
-                                f
+                                <FaFacebookF />
                             </a>
 
                             <a href="#" className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-black">
-                                x
+                                <FaXTwitter />
                             </a>
                         </div>
                     </div>
 
                 </div>
 
-                {/* Divider */}
                 <div className="border-t border-gray-700"></div>
 
-                {/* Bottom */}
                 <div className="max-w-7xl mx-auto px-8 py-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
 
                     <p>© 2026 Digitools. All rights reserved.</p>
