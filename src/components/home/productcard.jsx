@@ -1,20 +1,28 @@
 import React from 'react';
-/*
-"id": 1,
-    "name": "Pro Resume Builder",
-    "description": "Create ATS-friendly resumes with professionally designed templates.",
-    "price": 19,
-    "period": "one-time",
-    "tag": "Popular",
-    "tagType": "popular",
-    "features": [
-      "100+ templates",
-      "ATS optimization",
-      "Export to PDF",
-      "Custom sections"
-    ],
-    "icon": "FileText"
-*/
+import {
+    LuFileText,
+    LuSparkles,
+    LuLayoutTemplate,
+    LuCalendar,
+    LuCopyCheck,
+    LuUser,
+    LuBox,
+    LuMail,
+    LuReceipt
+} from "react-icons/lu";
+
+const iconMap = {
+    FileText: LuFileText,
+    Sparkles: LuSparkles,
+    LayoutTemplate: LuLayoutTemplate,
+    Calendar: LuCalendar,
+    CheckSquare: LuCopyCheck,
+    User: LuUser,
+    Box: LuBox,
+    Mail: LuMail,
+    Receipt: LuReceipt
+};
+
 const productcard = ({ product, selectBuyItem, setSelectBuyItem, cartCount, setCartCount }) => {
     const { name, description, price, period, tag, tagType, features, icon } = product;
 
@@ -24,22 +32,11 @@ const productcard = ({ product, selectBuyItem, setSelectBuyItem, cartCount, setC
         "new": "bg-green-100 text-green-600"
     };
 
-    //    const handleDeleteSelectedPlayer = (player) => {
-    //     console.log("clicked")
-    //     const filteredPlayers = selectedPlayers.filter(selectedPlayer => selectedPlayer.name != player.name);
-    //     console.log(filteredPlayers);
-    //     setSelectedPlayers(filteredPlayers);
-    //     setCoin(coin + player.price);
-    // };
-
-    
-    // const handleChoosePlayer = () => {
-    //     let newCoin = coin - price;
-    // 
-    //     toast.success(`${name} is selected`);
-    //     setIsSelected(true);
-    //     setSelectedPlayers([...selectedPlayers, player]);
-    // }
+    const iconStyles = {
+        "best-seller": "bg-orange-100 text-orange-600",
+        "popular": "bg-purple-100 text-purple-600",
+        "new": "bg-green-100 text-green-600"
+    };
 
     const handleBuyNow = () => {
         setSelectBuyItem([...selectBuyItem, product]);
@@ -49,17 +46,27 @@ const productcard = ({ product, selectBuyItem, setSelectBuyItem, cartCount, setC
         console.log("cartCount", newCartCount)
     };
 
+    const Icon = iconMap[icon] || LuBox;
+
     return (
         <div className="card bg-base-100 shadow-sm">
             <div className="card-body">
 
-                {
-                    tagType && (
-                        <span className={`badge badge-sm ${tagStyles[tagType]}`}>
-                            {tag}
-                        </span>
-                    )
-                }
+                <div className="w-full flex justify-end">
+                    <div>
+                        {
+                        tagType && (
+                            <span className={`badge badge-sm ${tagStyles[tagType]}`}>
+                                {tag}
+                            </span>
+                        )
+                    }
+                    </div>
+                </div>
+
+                <div className={`w-16 h-16 rounded-full flex items-center justify-center ${iconStyles[tagType]}`}>
+                    <Icon className="text-3xl" />
+                </div>
 
                 <h2 className="text-[24px] font-bold">{name}</h2>
 
