@@ -87,7 +87,7 @@ const productcard = ({ product, selectBuyItem, setSelectBuyItem, cartCount, setC
                 </ul>
 
                 <div className="mt-4">
-                    <button className="btn btn-primary btn-block" onClick={handleBuyNow}>
+                    <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white btn-block" onClick={handleBuyNow}>
                         Buy Now
                     </button>
                 </div>
