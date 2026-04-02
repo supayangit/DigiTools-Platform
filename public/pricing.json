@@ -1,0 +1,55 @@
+[
+  {
+    "id": 1,
+    "name": "Starter",
+    "subtitle": "Perfect for individuals getting started",
+    "description": "Access essential tools to begin your productivity journey.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "10 premium templates",
+      "Basic analytics",
+      "Email support",
+      "Single user access"
+    ],
+    "icon": "Rocket"
+  },
+  {
+    "id": 2,
+    "name": "Pro",
+    "subtitle": "Best for professionals and creators",
+    "description": "Unlock advanced features designed to boost productivity and creativity.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ premium templates",
+      "Advanced analytics",
+      "Priority support",
+      "Unlimited projects",
+      "Team collaboration"
+    ],
+    "icon": "Zap"
+  },
+  {
+    "id": 3,
+    "name": "Enterprise",
+    "subtitle": "Advanced tools for teams and organizations",
+    "description": "A complete suite of tools built for scaling businesses and large teams.",
+    "price": 99,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "All Pro features",
+      "Unlimited team members",
+      "Dedicated account manager",
+      "Custom integrations",
+      "Enterprise-grade security"
+    ],
+    "icon": "Building"
+  }
+]

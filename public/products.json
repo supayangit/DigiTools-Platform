@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "name": "Pro Resume Builder",
+    "description": "Create ATS-friendly resumes with professionally designed templates.",
+    "price": 19,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Custom sections"
+    ],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "AI Content Generator",
+    "description": "Generate blog posts, marketing copy, and social media content using AI.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Unlimited AI generations",
+      "Blog outline creator",
+      "SEO optimization",
+      "Multiple tone styles"
+    ],
+    "icon": "Sparkles"
+  },
+  {
+    "id": 3,
+    "name": "Startup Landing Page Kit",
+    "description": "A modern collection of responsive landing page templates for startups.",
+    "price": 39,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "20+ landing page templates",
+      "Fully responsive design",
+      "Tailwind CSS components",
+      "Figma design file included"
+    ],
+    "icon": "LayoutTemplate"
+  },
+  {
+    "id": 4,
+    "name": "Social Media Scheduler",
+    "description": "Schedule and manage posts across all major social media platforms.",
+    "price": 9,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Multi-platform scheduling",
+      "Content calendar",
+      "Analytics dashboard",
+      "Auto-posting"
+    ],
+    "icon": "Calendar"
+  },
+  {
+    "id": 5,
+    "name": "Notion Productivity Pack",
+    "description": "A bundle of productivity templates for task management and planning.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Goal tracking system",
+      "Daily planner",
+      "Habit tracker",
+      "Project management boards"
+    ],
+    "icon": "CheckSquare"
+  },
+  {
+    "id": 6,
+    "name": "Portfolio Website Builder",
+    "description": "Build beautiful developer and designer portfolios quickly.",
+    "price": 8,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Portfolio templates",
+      "Drag & drop sections",
+      "Custom domains",
+      "SEO optimized"
+    ],
+    "icon": "User"
+  },
+  {
+    "id": 7,
+    "name": "UI Component Library",
+    "description": "A premium collection of reusable UI components for modern web apps.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "200+ UI components",
+      "Dark & light themes",
+      "Tailwind integration",
+      "Figma design kit"
+    ],
+    "icon": "Box"
+  },
+  {
+    "id": 8,
+    "name": "Email Marketing Toolkit",
+    "description": "Design high-converting email campaigns and newsletters.",
+    "price": 14,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Drag & drop builder",
+      "Email templates",
+      "Automation workflows",
+      "Analytics reports"
+    ],
+    "icon": "Mail"
+  },
+  {
+    "id": 9,
+    "name": "Freelancer Invoice Generator",
+    "description": "Create and manage professional invoices for freelance clients.",
+    "price": 10,
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Custom invoice templates",
+      "Client management",
+      "PDF export",
+      "Payment tracking"
+    ],
+    "icon": "Receipt"
+  }
+]
